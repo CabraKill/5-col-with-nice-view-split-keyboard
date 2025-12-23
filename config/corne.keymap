@@ -11,7 +11,7 @@
 / {
     chosen {
         zmk,physical-layout = &foostan_corne_5col_layout;
-        //zmk,matrix-transform = &five_column_transform;
+        #zmk,matrix-transform = &five_column_transform;
     };
 
     behaviors {
@@ -189,9 +189,9 @@
 
             display-name = "Raise";
             bindings = <
-&kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &kp N6          &kp N7    &kp N8    &kp N9     &kp N0   &kp MINUS  &kp EQUAL
-&HML LBRC  &HML LBKT &HMShiftL LPAR &HMShiftR RPAR &HMR RBKT &HMR RBRC &HMR FSLH &HMR BSLH &HMR GRAVE &trans &trans &kp COMMA
-&kp COLON  &kp SEMI  &kp DOT   &HML LCTRL &HMShiftL RALT &HMShiftR QUESTION &HMR LGUI &HMR ESC &HMR SPACE &HMR RET &trans &kp TAB
+&kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
+&HML MINUS &HML EQUAL &HML LBRC &HMShiftL LPAR &kp G   &kp H   &HMShiftR RPAR &HMR RBRC &HMR FSLH &HMR BSLH
+&kp COLON  &kp SEMI   &kp DOT   &HML LCTRL &HMShiftL LEFT_SHIFT &HMShiftR RIGHT_SHIFT &HMR RCTRL &HMR RIGHT_ALT &HMR RIGHT_GUI &kp RET
             >;
         };
     };
