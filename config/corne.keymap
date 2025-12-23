@@ -146,6 +146,16 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;
         };
+
+        mouseTapHold: mouseTapHold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSETAPHOLD";
+            bindings = <&mmv>, <&mmv>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -200,9 +210,9 @@
 
         mouseLayer {
             bindings = <
-&trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK       &trans          &trans          &trans           &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
-&msc SCRL_DOWN  &mkp MB1        &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans
-&trans          &trans          &trans        &trans          &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans
+&trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK                             &trans                                &trans                               &trans                                &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
+&msc SCRL_DOWN  &mkp MB1        &trans        &mouseTapHold MOVE_LEFT MOVE_X(-200)  &mouseTapHold MOVE_DOWN MOVE_Y(-200)  &mouseTapHold MOVE_UP MOVE_Y(200)    &mouseTapHold MOVE_RIGHT MOVE_X(200)  &trans  &trans  &trans  &trans  &trans
+&trans          &trans          &trans        &trans                                &trans                                &trans                               &trans                                &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
