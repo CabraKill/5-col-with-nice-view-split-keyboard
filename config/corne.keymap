@@ -36,12 +36,12 @@
 // |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M   | CTRL | META | . |
 //             | GUI | LWR | SPC |     | ENT | RSE  | BSPC |
                         display-name = "Base";
-                        bindings = <
+                                    bindings = <
    AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U)  AS(I)     AS(O)     AS(P)
-   AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)     AS(SQT)
+        &hm LGUI A &hm LALT S &hm LSHFT D &hm LCTRL F AS(G)     AS(H)   &hm RCTRL J &hm RSHFT K &hm RALT L &hm RGUI SQT
    AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   AS(M)  &kp LCTL  &kp RALT  AS(DOT)
-        &kp LGUI &mo 1 &kp SPACE     AS(RET) &mo 2  &kp BSPC
-                        >;
+           &kp LGUI &mo 1 &kp SPACE     AS(RET) &mo 2  &kp BSPC
+                                    >;
                 };
 
                 lower_layer {
