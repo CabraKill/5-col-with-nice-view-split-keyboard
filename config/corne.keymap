@@ -147,37 +147,11 @@
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;
         };
 
-        mouseTapHoldRight: mouseTapHoldRight {
+        mouseTapHold: mouseTapHold {
             compatible = "zmk,behavior-hold-tap";
-            label = "MOUSETAPHOLDRIGHT";
-            bindings = <&mmv MOVE_X(200)>, <&mmv MOVE_X(10)>;
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
+            label = "MOUSETAPHOLD";
+            bindings = <&mmv>, <&mmv>;
 
-        mouseTapHoldLeft: mouseTapHoldLeft {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOUSETAPHOLDLEFT";
-            bindings = <&mmv MOVE_X(-200)>, <&mmv MOVE_X(-10)>;
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        mouseTapHoldUp: mouseTapHoldUp {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOUSETAPHOLDUP";
-            bindings = <&mmv MOVE_Y(200)>, <&mmv MOVE_Y(10)>;
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        mouseTapHoldDown: mouseTapHoldDown {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOUSETAPHOLDDOWN";
-            bindings = <&mmv MOVE_Y(-200)>, <&mmv MOVE_Y(-10)>;
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
@@ -237,7 +211,7 @@
         mouseLayer {
             bindings = <
 &trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK                             &trans                                &trans                               &trans                                &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
-&msc SCRL_DOWN  &mkp MB1        &trans        &mouseTapHoldLeft                     &mouseTapHoldDown                     &mouseTapHoldUp                      &mouseTapHoldRight                    &trans  &trans  &trans  &trans  &trans
+&msc SCRL_DOWN  &mkp MB1        &trans        &mouseTapHold MOVE_LEFT MOVE_X(-200)  &mouseTapHold MOVE_DOWN MOVE_Y(-200)  &mouseTapHold MOVE_UP MOVE_Y(200)    &mouseTapHold MOVE_RIGHT MOVE_X(200)  &trans  &trans  &trans  &trans  &trans
 &trans          &trans          &trans        &trans                                &trans                                &trans                               &trans                                &trans  &trans  &trans  &trans  &trans
             >;
         };
