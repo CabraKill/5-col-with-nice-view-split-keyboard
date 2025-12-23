@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#define AS(keycode) &as LS(keycode) keycode
+#define AS(x) &as x x
 
 / {
     chosen {
