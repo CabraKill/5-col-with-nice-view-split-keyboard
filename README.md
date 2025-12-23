@@ -2,6 +2,10 @@
 
 ![diagram](./my_keymap.svg)
 
+## Diagram generator
+
+![keymap-drawer-web](https://github.com/caksoylar/keymap-drawer-web)
+
 ## doc
 
 [home row mods](https://www.youtube.com/watch?v=EQCaQBlv1UM)
