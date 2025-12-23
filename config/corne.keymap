@@ -153,14 +153,14 @@
 
         leftScroll {
             bindings = <&mmv MOVE_X(-200)>;
-            key-positions = <13 19>;
-            layers = <1>;
+            key-positions = <13 19 31>;
+            layers = <0 1>;
         };
 
         upScroll {
             bindings = <&mmv MOVE_Y(200)>;
-            key-positions = <13 29>;
-            layers = <1>;
+            key-positions = <13 29 31>;
+            layers = <0 1>;
         };
     };
 
@@ -191,9 +191,9 @@
 
             display-name = "Lower";
             bindings = <
-&kp EXCL      &kp AT          &kp HASH        &kp DLLR      &kp PRCNT        &kp CARET            &kp AMPS   &kp KP_MULTIPLY   &kp LPAR    &kp RPAR  &bt BT_SEL 0     &bt BT_SEL 1
-&bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp LEFT      &kp DOWN         &kp UP               &kp RIGHT  &mmv MOVE_X(200)  &bt BT_CLR  &mkp MB5  &mkp MB4         &mkp MB1
-&mkp MB2      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mmv MOVE_Y(-200)    &kp LGUI   &trans            &kp SPACE   &kp ESC   &kp RIGHT_SHIFT  &kp TAB
+&kp EXCL      &kp AT          &kp HASH        &kp DLLR      &kp PRCNT        &kp CARET          &kp AMPS   &kp KP_MULTIPLY  &kp LPAR    &kp RPAR  &bt BT_SEL 0     &bt BT_SEL 1
+&bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp LEFT      &kp DOWN         &kp UP             &kp RIGHT  &msc SCRL_DOWN   &bt BT_CLR  &mkp MB5  &mkp MB4         &mkp MB1
+&mkp MB2      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &msc SCRL_RIGHT    &kp LGUI   &trans           &kp SPACE   &kp ESC   &kp RIGHT_SHIFT  &kp TAB
             >;
         };
 
