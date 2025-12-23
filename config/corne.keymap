@@ -148,26 +148,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        leftScroll {
-            bindings = <&mmv MOVE_X(-200)>;
-            key-positions = <13 19 31>;
-            layers = <0 1>;
-        };
-
-        upScroll {
-            bindings = <&mmv MOVE_Y(200)>;
-            key-positions = <13 29 31>;
-            layers = <0 1>;
-        };
-
-        activateMouseLayer {
-            bindings = <&kp A>;
-            key-positions = <12>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -219,9 +200,9 @@
 
         mouseLayer {
             bindings = <
-&trans          &msc SCRL_DOWN  &msc SCRL_UP  &mkp RCLK  &trans          &trans            &trans        &trans           &trans  &trans  &trans  &msc SCRL_DOWN
-&msc SCRL_DOWN  &mkp MB1        &trans        &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans
-&trans          &trans          &trans        &trans     &trans          &trans            &trans        &trans           &trans  &trans  &trans  &trans
+&trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK       &trans          &trans          &trans           &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
+&msc SCRL_DOWN  &mkp MB1        &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans
+&trans          &trans          &trans        &trans          &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
