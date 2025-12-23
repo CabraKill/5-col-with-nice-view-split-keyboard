@@ -189,9 +189,9 @@
 
             display-name = "Raise";
             bindings = <
-&kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
-&HML LEFT_GUI MINUS &HML LEFT_ALT EQUAL &HML LCTRL LBRC &HMShiftL LEFT_SHIFT LPAR &kp G   &kp H   &HMShiftR RIGHT_SHIFT RPAR &HMR RCTRL RBRC &HMR RIGHT_ALT FSLH &HMR RIGHT_GUI BSLH
-&kp COLON  &kp SEMI   &kp DOT  &LCTRL &HMShiftL LEFT_SHIFT LEFT_SHIFT &HMShiftR RIGHT_SHIFT RIGHT_SHIFT &HMR RCTRL RCTRL &HMR RIGHT_ALT RIGHT_ALT &HMR RIGHT_GUI RIGHT_GUI &kp RET
+&kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &kp N6    &kp N7    &kp N8    &kp N9     &kp N0   &kp MINUS  &kp EQUAL
+&HML LGUI LBRC   &HML LALT LBKT   &HML LCTRL LPAR   &HMShiftL LEFT_SHIFT RPAR   &kp RBKT   &kp RBRC   &HMShiftR RIGHT_SHIFT FSLH   &HMR RCTRL BSLH   &HMR RALT GRAVE   &HMR RIGHT_GUI RIGHT_GUI   &trans  &trans COMMA
+&kp COLON   &kp SEMI   &kp DOT   &kp LCTRL   &kp RALT   &kp QUESTION   &kp LGUI   &kp ESC   &kp SPACE   &kp RET   &trans   &kp TAB
             >;
         };
     };
