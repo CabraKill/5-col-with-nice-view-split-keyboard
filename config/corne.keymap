@@ -9,14 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&mmv {
-    //compatible = "zmk,behavior-input-two-axis";
-    //x-input-code = <INPUT_REL_X>;
-    //y-input-code = <INPUT_REL_Y>;
-    //time-to-max-speed-ms = <300>;
-    acceleration-exponent = <2>;
-};
-
 //&msc msc {
 //    compatible = "zmk,behavior-input-two-axis";
 //    x-input-code = <INPUT_REL_HWHEEL>;
@@ -30,7 +22,6 @@
         zmk,physical-layout = &foostan_corne_5col_layout;
         #zmk,matrix-transform = &five_column_transform;
     };
-
 
     behaviors {
         as: auto_shift {
@@ -255,9 +246,9 @@
         mouseLayer {
             display-name = "Mouse";
             bindings = <
-&trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK                             &trans                                &mmv MOVE_X(-2000)                   &testeeee MOVE_RIGHT MOVE_X(-6000)     &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
-&msc SCRL_DOWN  &mkp MB1        &trans        &mouseTapHold MOVE_LEFT MOVE_X(-200)  &mouseTapHold MOVE_DOWN MOVE_Y(-200)  &mouseTapHold MOVE_UP MOVE_Y(200)    &mouseTapHold MOVE_RIGHT MOVE_X(2000)  &trans  &trans  &trans  &trans  &trans
-&trans          &trans          &trans        &trans                                &trans                                &trans                               &trans                                 &trans  &trans  &trans  &trans  &trans
+&trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK                             &trans                                &trans             &testeeee MOVE_UP MOVE_Y(-600)  &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
+&msc SCRL_DOWN  &mkp MB1        &trans        &mouseTapHold MOVE_LEFT MOVE_X(-200)  &mouseTapHold MOVE_DOWN MOVE_Y(-200)  &mmv MOVE_RIGHT    &trans                          &trans  &trans  &trans  &trans  &trans
+&trans          &trans          &trans        &trans                                &trans                                &trans             &trans                          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
