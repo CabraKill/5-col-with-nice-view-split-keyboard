@@ -10,10 +10,10 @@
 #include <dt-bindings/zmk/pointing.h>
 
 mmv: mmv {
-    compatible = "zmk,behavior-input-two-axis";
-    x-input-code = <INPUT_REL_X>;
-    y-input-code = <INPUT_REL_Y>;
-    time-to-max-speed-ms = <300>;
+    //compatible = "zmk,behavior-input-two-axis";
+    //x-input-code = <INPUT_REL_X>;
+    //y-input-code = <INPUT_REL_Y>;
+    //time-to-max-speed-ms = <300>;
     acceleration-exponent = <2>;
 };
 
