@@ -223,7 +223,7 @@
 
         mouseLayer {
             bindings = <
-&trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK                             &trans                                &mmv MOVE_X(-2000)                   &testeeee MOVE_RIGHT MOVE_X(-600)      &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
+&trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK                             &trans                                &mmv MOVE_X(-2000)                   &testeeee MOVE_RIGHT MOVE_X(-6000)      &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
 &msc SCRL_DOWN  &mkp MB1        &trans        &mouseTapHold MOVE_LEFT MOVE_X(-200)  &mouseTapHold MOVE_DOWN MOVE_Y(-200)  &mouseTapHold MOVE_UP MOVE_Y(200)    &mouseTapHold MOVE_RIGHT MOVE_X(2000)  &trans  &trans  &trans  &trans  &trans
 &trans          &trans          &trans        &trans                                &trans                                &trans                               &trans                                 &trans  &trans  &trans  &trans  &trans
             >;
