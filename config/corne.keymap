@@ -167,8 +167,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
             flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
         };
     };
 
@@ -225,7 +225,7 @@
         mouseLayer {
             display-name = "Mouse";
             bindings = <
-&trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK                             &trans                                &mmv MOVE_X(-2000)                   &testeeee MOVE_RIGHT MOVE_X(-6000)      &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
+&trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK                             &trans                                &mmv MOVE_X(-2000)                   &testeeee MOVE_RIGHT MOVE_X(-6000)     &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
 &msc SCRL_DOWN  &mkp MB1        &trans        &mouseTapHold MOVE_LEFT MOVE_X(-200)  &mouseTapHold MOVE_DOWN MOVE_Y(-200)  &mouseTapHold MOVE_UP MOVE_Y(200)    &mouseTapHold MOVE_RIGHT MOVE_X(2000)  &trans  &trans  &trans  &trans  &trans
 &trans          &trans          &trans        &trans                                &trans                                &trans                               &trans                                 &trans  &trans  &trans  &trans  &trans
             >;
