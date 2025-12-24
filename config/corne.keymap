@@ -15,6 +15,13 @@
         #zmk,matrix-transform = &five_column_transform;
     };
 
+    &mmv {
+      //x-input-code = <INPUT_REL_X>;
+      //y-input-code = <INPUT_REL_Y>;
+      //time-to-max-speed-ms = <300>;
+      acceleration-exponent = 2;
+    };
+
     behaviors {
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
