@@ -203,19 +203,19 @@
         };
 
         mouseJumpDown {
-            bindings = <&mmv MOVE_Y(-5000)>;
+            bindings = <&mmv MOVE_Y(5000)>;
             key-positions = <16 10>;
             layers = <3>;
         };
 
         mouseJumpUp {
-            bindings = <&mmv MOVE_X(-5000)>;
+            bindings = <&mmv MOVE_Y(-5000)>;
             key-positions = <10 17>;
             layers = <3>;
         };
 
         mouseJumpRight {
-            bindings = <&mmv MOVE_X(-5000)>;
+            bindings = <&mmv MOVE_X(5000)>;
             key-positions = <10 18>;
             layers = <3>;
         };
