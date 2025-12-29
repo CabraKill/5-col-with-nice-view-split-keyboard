@@ -197,7 +197,7 @@
         compatible = "zmk,combos";
 
         moseMove {
-            bindings = <&mmv MOVE_Y(-600)>;
+            bindings = <&mmv MOVE_Y(-10000)>;
             key-positions = <16 10>;
             layers = <3>;
         };
