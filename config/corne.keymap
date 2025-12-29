@@ -248,9 +248,9 @@
         mouseLayer {
             display-name = "Mouse";
             bindings = <
-&trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK                             &trans                                &trans             &testeeee MOVE_UP MOVE_Y(-600)  &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
-&msc SCRL_DOWN  &mkp MB1        &trans        &mouseTapHold MOVE_LEFT MOVE_X(-200)  &mouseTapHold MOVE_DOWN MOVE_Y(-200)  &mmv MOVE_RIGHT    &trans                          &trans  &trans  &trans  &trans  &trans
-&trans          &trans          &trans        &trans                                &trans                                &trans             &trans                          &trans  &trans  &trans  &trans  &trans
+&trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK  &trans                                &trans                                 &trans                                &mouseTapHold MOVE_UP MOVE_Y(-200)  &trans  &trans  &trans  &msc SCRL_RIGHT
+&msc SCRL_DOWN  &mkp MB1        &trans        &trans     &mouseTapHold MOVE_LEFT MOVE_X(-200)  &mouseTapHold MOVE_DOWN MOVE_Y(200)    &mouseTapHold MOVE_RIGHT MOVE_X(200)  &trans                              &trans  &trans  &trans  &trans
+&trans          &trans          &trans        &trans     &trans                                &trans                                 &trans                                &trans                              &trans  &trans  &trans  &trans
             >;
         };
     };
