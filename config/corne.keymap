@@ -255,7 +255,7 @@
             display-name = "Mouse";
             bindings = <
 &trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK                             &trans            &trans                                &trans                                &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
-&msc SCRL_DOWN  &mkp MB1        &trans        &mouseTapHold MOVE_LEFT MOVE_X(-600)  &mmv MOVE_Y(200)  &mouseTapHold MOVE_UP MOVE_Y(-600)    &mouseTapHold MOVE_RIGHT MOVE_X(600)  &trans  &trans  &trans  &trans  &trans
+&msc SCRL_DOWN  &mkp MB1        &trans        &mouseTapHold MOVE_LEFT MOVE_X(-600)  &mmv MOVE_Y(2000)  &mouseTapHold MOVE_UP MOVE_Y(-600)    &mouseTapHold MOVE_RIGHT MOVE_X(600)  &trans  &trans  &trans  &trans  &trans
 &trans          &trans          &trans        &trans                                &trans            &trans                                &trans                                &trans  &trans  &trans  &trans  &trans
             >;
         };
