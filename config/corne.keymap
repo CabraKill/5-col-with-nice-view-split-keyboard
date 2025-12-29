@@ -197,7 +197,7 @@
         compatible = "zmk,combos";
 
         moseMove {
-            bindings = <&mmv MOVE_Y(600)>;
+            bindings = <&mmv MOVE_Y(-600)>;
             key-positions = <16 10>;
             layers = <3>;
         };
@@ -254,9 +254,9 @@
         mouseLayer {
             display-name = "Mouse";
             bindings = <
-&trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK                            &trans            &trans                                &trans                                &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
+&trans          &msc SCRL_LEFT  &msc SCRL_UP  &mkp RCLK                              &trans              &trans                                  &trans                                  &trans  &trans  &trans  &trans  &msc SCRL_RIGHT
 &msc SCRL_DOWN  &mkp MB1        &trans        &mouseTapHold MOVE_LEFT MOVE_X(10000)  &mmv MOVE_Y(10000)  &mouseTapHold MOVE_UP MOVE_Y(-10000)    &mouseTapHold MOVE_RIGHT MOVE_X(10000)  &trans  &trans  &trans  &trans  &trans
-&trans          &trans          &trans        &trans                               &trans            &trans                                &trans                                &trans  &trans  &trans  &trans  &trans
+&trans          &trans          &trans        &trans                                 &trans              &trans                                  &trans                                  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
