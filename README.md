@@ -1,10 +1,15 @@
 # 5-Column Split Keyboard with Nice View
 
-![diagram](./my_keymap.svg)
+![diagram](./visualizer.svg)
 
 ## Diagram generator
 
 ![keymap-drawer-web](https://github.com/caksoylar/keymap-drawer-web)
+
+```bash
+keymap parse -c 10 -z ./config/corne.keymap >sweep_keymap.yaml
+keymap draw sweep_keymap.yaml > visualizer.svg
+```
 
 ## doc
 

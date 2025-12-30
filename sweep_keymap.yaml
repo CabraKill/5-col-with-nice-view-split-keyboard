@@ -1,0 +1,113 @@
+layout: {zmk_keyboard: corne, layout_name: foostan_corne_5col_layout}
+layers:
+  Base:
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - - {t: A, h: LEFT GUI}
+    - {t: S, h: LEFT ALT}
+    - {t: D, h: LCTRL}
+    - {t: F, h: LEFT SHIFT}
+    - G
+    - H
+    - {t: J, h: RIGHT SHIFT}
+    - {t: K, h: RCTRL}
+    - {t: L, h: RIGHT ALT}
+    - {t: '''', h: RIGHT GUI}
+  - [Z, X, C, V, B, N, M, ',', ., \]
+  - [Mouse, Lower, SPACE, RET, Raise, BSPC]
+  Lower:
+  - ['!', '@', '#', $, '%', ^, '&', KP MULTIPLY, (, )]
+  - - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - {t: BT, h: '4'}
+    - LEFT
+    - DOWN
+    - UP
+    - RIGHT
+    - '&msc SCRL_DOWN'
+  - [BT CLR, '&mkp MB5', '&mkp MB4', '&mkp MB1', '&mkp MB2', '&mmv MOVE_LEFT', '&mmv MOVE_DOWN', '&mmv MOVE_UP', '&mmv MOVE_RIGHT', '&msc SCRL_RIGHT']
+  - - LGUI
+    - {type: held}
+    - SPACE
+    - ESC
+    - RIGHT SHIFT
+    - TAB
+  Raise:
+  - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+  - - {t: '-', h: LEFT GUI}
+    - {t: '=', h: LEFT ALT}
+    - {t: '{', h: LCTRL}
+    - {t: '[', h: LEFT SHIFT}
+    - (
+    - )
+    - {t: ']', h: RIGHT SHIFT}
+    - {t: '}', h: RCTRL}
+    - {t: /, h: RIGHT ALT}
+    - {t: \, h: RIGHT GUI}
+  - - '`'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ','
+    - ':'
+    - ;
+    - .
+    - LCTRL
+    - RALT
+    - '?'
+  - - LGUI
+    - ESC
+    - SPACE
+    - RET
+    - {type: held}
+    - TAB
+  Mouse:
+  - - {t: ▽, type: trans}
+    - '&msc SCRL_LEFT'
+    - '&msc SCRL_UP'
+    - '&mkp RCLK'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - '&msc SCRL_RIGHT'
+    - '&msc SCRL_DOWN'
+    - '&mkp MB1'
+    - {t: ▽, type: trans}
+    - '&mmv MOVE_LEFT'
+    - '&mmv MOVE_DOWN'
+    - '&mmv MOVE_UP'
+    - '&mmv MOVE_RIGHT'
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+combos:
+- p: [10, 15]
+  k: '&mmv MOVE_X(-5000)'
+  l: [Mouse]
+- p: [16, 10]
+  k: '&mmv MOVE_Y(5000)'
+  l: [Mouse]
+- p: [10, 17]
+  k: '&mmv MOVE_Y(-5000)'
+  l: [Mouse]
+- p: [10, 18]
+  k: '&mmv MOVE_X(5000)'
+  l: [Mouse]
