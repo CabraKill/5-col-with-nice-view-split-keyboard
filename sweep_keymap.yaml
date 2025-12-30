@@ -62,42 +62,15 @@ layers:
     - {type: held}
     - TAB
   Mouse:
-  - - {t: ▽, type: trans}
-    - '&msc SCRL_LEFT'
-    - '&msc SCRL_UP'
-    - '&mkp RCLK'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - '&msc SCRL_RIGHT'
-    - '&msc SCRL_DOWN'
-    - '&mkp MB1'
-    - {t: ▽, type: trans}
-    - '&mmv MOVE_LEFT'
-    - '&mmv MOVE_DOWN'
-    - '&mmv MOVE_UP'
-    - '&mmv MOVE_RIGHT'
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - ['', '&msc SCRL_LEFT', '&msc SCRL_UP', '&mkp RCLK', '', '', '', '', '', '']
+  - ['', '&msc SCRL_RIGHT', '&msc SCRL_DOWN', '&mkp MB1', '', '&mmv MOVE_LEFT', '&mmv MOVE_DOWN', '&mmv MOVE_UP', '&mmv MOVE_RIGHT', '']
+  - ['', '', '', '', '', '', '', '', '', '']
   - - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
 combos:
 - p: [10, 15]
   k: '&mmv MOVE_X(-5000)'
