@@ -13,6 +13,13 @@ keymap parse -c 10 -z ./config/corne.keymap >sweep_keymap.yaml
 keymap draw sweep_keymap.yaml > visualizer.svg
 ```
 
+## Keymap editor
+
+
+Thanks a lot to the free online available editor that easily connects with the repo and enable the visual edit of the configs.
+
+* https://nickcoutsos.github.io/keymap-editor/ ♥️
+
 ## doc
 
 [home row mods](https://www.youtube.com/watch?v=EQCaQBlv1UM)
