@@ -2,6 +2,17 @@
 
 ![diagram](./visualizer.svg)
 
+## Colemak
+
+The Colemak-DH Layout was added to be used in parallel of the default layer with QWERTY as I **can't** fully change yet. To enable it a combo with keys equivalent of 'Q' and 'P' were added on both layers to back and forth between the layouts.
+The layout change is stationary so momentary layer is not affected.
+
+Typeractive Corne with Colemak-DH layer:
+![colemak layer](./colemak.jpeg)
+
+Combos:
+![combos](./combo.jpeg)
+
 ## Diagram generator
 
 ![keymap-drawer-web](https://github.com/caksoylar/keymap-drawer-web)
