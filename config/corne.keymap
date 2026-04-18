@@ -244,16 +244,16 @@
         colemak_dh_layer {
             // -----------------------------------------------------------------------------------------
             // |  Q  |  W  |  F  |  P  |  B  |     |  J  |  L   |  U   |  Y   |  ; |
-            // |  A  |  R  |  S  |  T  |  G  |     |  H  |  N   |  E   |  I   |  O |
+            // |  A  |  R  |  S  |  T  |  G  |     |  M  |  N   |  E   |  I   |  O |
             // |  Z  |  X  |  C  |  D  |  V  |     |  K  |  H   |  ,   |  .   |  / |
             //             | GUI | LWR | SPC |     | ENT | RSE  | BSPC |
             ```
 
             display-name = "COLEMAK";
             bindings = <
-            &kp Q         &kp W                   &kp F  &kp P      &kp B                    &kp J            &kp L             &kp U               &kp Y      &kp SEMI    &HML LEFT_GUI A  &HML LEFT_ALT R
-            &HML LCTRL S  &HMShiftL LEFT_SHIFT T  &kp G  &kp M      &kp N                    &kp E            &HMShiftR RIGHT_SHIFT I  &HMR RCTRL O     &HMR RIGHT_ALT SQT  &kp Z    &kp X            &kp C
-            &kp D         &kp V                   &kp K  &kp H      &kp COMMA                &kp DOT          &kp SLASH         &mo 1               &kp SPACE  &kp RET     &mo 2            &kp BSPC
+&kp Q         &kp W                   &kp F  &kp P      &kp B                    &kp J            &kp L             &kp U               &kp Y      &kp SEMI    &HML LEFT_GUI A  &HML LEFT_ALT R
+&HML LCTRL S  &HMShiftL LEFT_SHIFT T  &kp G  &kp M      &HMShiftR RIGHT_SHIFT N  &HMR RCTRL E     &HMR RIGHT_ALT I  &HMR RIGHT_GUI O  &kp Z      &kp X    &kp C            &kp D
+&kp V         &kp K                   &kp H  &kp COMMA  &kp DOT                  &kp BACKSLASH    &mo 3             &mo 1               &kp SPACE  &kp RET  &mo 2            &kp BSPC
             >;
         };
 
