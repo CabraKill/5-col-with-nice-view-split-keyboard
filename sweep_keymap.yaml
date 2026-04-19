@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne, layout_name: foostan_corne_5col_layout}
 layers:
-  Base:
+  QWERTY:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - {t: A, h: LEFT GUI}
     - {t: S, h: LEFT ALT}
@@ -13,7 +13,31 @@ layers:
     - {t: L, h: RIGHT ALT}
     - {t: '''', h: RIGHT GUI}
   - [Z, X, C, V, B, N, M, ',', ., \]
-  - [Mouse, Lower, SPACE, RET, Raise, BSPC]
+  - - {t: Mouse, h: Mouse}
+    - {t: Lower, h: Lower}
+    - SPACE
+    - RET
+    - {t: Raise, h: Raise}
+    - BSPC
+  COLEMAK:
+  - [Q, W, F, P, B, J, L, U, Y, ;]
+  - - {t: A, h: LEFT GUI}
+    - {t: R, h: LEFT ALT}
+    - {t: S, h: LCTRL}
+    - {t: T, h: LEFT SHIFT}
+    - G
+    - M
+    - {t: N, h: RIGHT SHIFT}
+    - {t: E, h: RCTRL}
+    - {t: I, h: RIGHT ALT}
+    - {t: O, h: RIGHT GUI}
+  - [Z, X, C, D, V, K, H, ',', ., \]
+  - - {t: Mouse, h: Mouse}
+    - {t: Lower, h: Lower}
+    - SPACE
+    - RET
+    - {t: Raise, h: Raise}
+    - BSPC
   Lower:
   - ['!', '@', '#', $, '%', ^, '&', KP MULTIPLY, (, )]
   - - {t: BT, h: '0'}
@@ -84,3 +108,9 @@ combos:
 - p: [10, 18]
   k: '&mmv MOVE_X(5000)'
   l: [Mouse]
+- p: [0, 9]
+  k: {t: COLEMAK, h: toggle}
+  l: [QWERTY]
+- p: [0, 9]
+  k: {t: QWERTY, h: toggle}
+  l: [COLEMAK]
