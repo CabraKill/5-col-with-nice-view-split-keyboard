@@ -202,6 +202,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
+            release-after-ms = <2000>;
         };
     };
 
