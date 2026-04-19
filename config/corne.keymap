@@ -276,7 +276,7 @@
 
             display-name = "COLEMAK";
             bindings = <
-&kp Q         &kp W                   &kp F  &kp P      &kp B                    &kp J            &kp L              &kp U              &kp Y      &kp SEMI  &HML LEFT_GUI A    &HML LEFT_ALT R
+&kp Q         &kp W                   &kp F  &kp P      &kp B                    &kp J            &kp L              &kp U              &kp Y      &kp SQT  &HML LEFT_GUI A    &HML LEFT_ALT R
 &HML LCTRL S  &HMShiftL LEFT_SHIFT T  &kp G  &kp M      &HMShiftR RIGHT_SHIFT N  &HMR RCTRL E     &HMR RIGHT_ALT I   &HMR RIGHT_GUI O   &kp Z      &kp X     &kp C              &kp D
 &kp V         &kp K                   &kp H  &kp COMMA  &kp DOT                  &kp BACKSLASH    &layer_change 4 4  &layer_change 2 2  &kp SPACE  &kp RET   &layer_change 3 3  &kp BSPC
             >;
