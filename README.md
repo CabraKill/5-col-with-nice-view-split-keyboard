@@ -1,6 +1,6 @@
 # 5-Column Split Keyboard with Nice View
 
-![diagram](./visualizer.svg)
+![diagram](./visualizer-1.0.3.svg)
 
 ## Colemak
 
