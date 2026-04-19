@@ -19,6 +19,10 @@
 //    acceleration-exponent = <2>;
 //};
 
+&sl {
+    release-after-ms = <2000>;
+};
+
 / {
     chosen {
         zmk,physical-layout = &foostan_corne_5col_layout;
@@ -202,7 +206,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
-            release-after-ms = <2000>;
         };
     };
 
